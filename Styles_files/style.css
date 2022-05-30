@@ -1,0 +1,958 @@
+body{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 18pt;
+	background-color: #C6A4C7;
+	background-image: url(../Pictures/Background1.jpg);
+	background-repeat: repeat;
+	background-position: top center;
+	
+	color: #F5F5F5;
+	
+	width:100%;
+	height:100%;
+	/*display: flex;
+	flex-direction: column;
+	min-height: 100%;*/
+}
+a{
+	text-decoration:none;
+	color: #F5F5F5;
+}
+header{
+	background: #76BCBC;
+	font-size:24pt;
+	color: #F58566;	
+	text-align:justify;
+
+	width:100%;
+	height:30px;
+	
+	position:relative;
+	top:0%;
+	border-bottom: 3px solid #F58566;
+	padding:10px 0px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.menu1{
+	position:absolute;
+	left:200px;
+}
+.menu1:before{
+	color:#F5F5F5;
+	content:"\2615";
+}
+.menu2{
+	position:absolute;
+	left:400px;
+}
+.menu2:before{
+	color:#F5F5F5;
+	content:"\2263";
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+article{	
+	background: #4D4D4D;
+	border: 3px solid #F58566;
+	
+	position:relative;
+	
+	height:90%;
+	width:70%;
+	
+	padding:10px ;
+	margin:0 auto;
+	margin-top:2.5%;/*30+3+10+10=53;53+25=78;*//*Отступ от врехнего края, чтобы не перекрывалось header-ом*/
+	margin-bottom:75px;	
+}
+h1{
+	font-size:22pt;
+}
+/*h2{
+	font-size:20pt;
+}*/
+p{
+	font-size:12pt;
+}
+li{
+	list-style-type:"\25C9";
+	list-style-position:inside;
+	margin-bottom:25px;
+	padding-left:30px;
+	padding-right:30px
+}
+li span {
+  position: relative;
+  left: 20px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.card{
+	transition:0.3s;
+	border-radius:5px;
+	
+	width:375px;
+	height:506px;
+	
+	position:relative;
+	display:inline-block;
+	margin:25px;
+}
+.descr{
+	display:none;
+	font-size: 10pt;
+	border: 3px solid #F58566;
+    margin-left:380px;
+    padding:10px;
+    margin-top:0px;
+	opacity: .95;
+    background:#111111;
+	border-radius:5px;
+    height:70%;
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+}
+.card:hover .descr{
+	display:block;
+    position:absolute;
+    top:0px;
+    z-index:9998;
+    width:80%;
+	
+}
+.card img{
+	width:100%;
+	height:100%;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);/*тень при наведении*/
+}
+.container{
+	position: absolute;
+	bottom:0px;
+	left:0;
+	
+	width:100%;
+	padding-bottom:2px;
+	padding-left:5px;
+	padding-top:100px;
+	
+	background-image: linear-gradient(/*градиент фона затемнения*/
+    180deg,
+    hsla(0, 0%, 35.29%, 0) 0%,
+    hsla(0, 0%, 34.53%, 0.034375) 16.36%,
+    hsla(0, 0%, 32.42%, 0.125) 33.34%,
+    hsla(0, 0%, 29.18%, 0.253125) 50.1%,
+    hsla(0, 0%, 24.96%, 0.4) 65.75%,
+    hsla(0, 0%, 19.85%, 0.546875) 79.43%,
+    hsla(0, 0%, 13.95%, 0.675) 90.28%,
+    hsla(0, 0%, 7.32%, 0.765625) 97.43%,
+    hsla(0, 0%, 0%, 0.8) 100%
+  );
+  border-radius:5px;
+}
+.conteiner.p{
+	font-size:18pt;
+}
+/*.card:hover::after {
+	content: attr(data-title);*/ /* Выводим текст */
+   /* position: absolute; 
+    left: 0; right: 0; bottom: 5px; *//* Положение подсказки */
+   /* z-index: 1;*/ /* Отображаем подсказку поверх других элементов */
+    /*background: #111111; 
+    color: #f5F5F5; 
+    text-align: center; 
+    font-family: "Times New Roman", Georgia, Serif; 
+    font-size: 11px;*/ /* Размер текста подсказки */
+    /*padding: 5px 10px; 
+    border: 1px solid #333;
+   }*//*Этот кусок пока решил оставить, и использовать прежний вариант*/
+
+img{
+	border-radius:5px 5px 5px 5px;/*скругление углов*/
+	width:375px;
+	height:506px;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.manga_article1{
+	/*position:relative;
+	margin-top:25px;
+	margin-bottom:850px;*/
+	/*border: 3px solid #F58566;*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width:25%;
+	position:absolute;
+	left:15%;
+	
+	margin:0 auto;
+	margin-top:75px;
+	margin-bottom:75px;
+	
+	align-items: stretch;	
+}
+.manga_image{
+	background: none;
+	/*border: 3px solid #F58566;*/
+	position:relative;
+	border-radius:5px;
+	height:81%;
+	width:60%;
+	
+	margin:0 auto;
+}
+.manga_image img{
+	width:100%;
+	height:100%;
+}
+.manga_read_button{
+	background: #4D4D4D;
+	border: 3px solid #F58566;
+
+	position:relative;
+	border-radius:5px;
+	
+	padding:10px ;
+	width:80%;
+	margin:0 auto;
+	margin-top:25px;
+	
+	
+}
+.manga_info{
+	background: #4D4D4D;
+	border: 3px solid #F58566;
+	position:relative;
+	border-radius:5px;
+	padding:10px; 
+	
+	width:80%;
+	margin:0 auto;
+	margin-top:25px;
+	margin-bottom:75px;
+	
+	
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+.manga_article2{
+	/*position:relative;
+	margin-top:25px;
+	margin-bottom:850px;*/
+	/*border: 3px solid #F58566;*/
+	display: flex;
+	flex-direction: column;
+	width:44%;
+	min-height: 100%;
+	position:absolute;
+	right:5%;
+	
+	margin:0 auto;
+	margin-top:75px;
+	margin-bottom:75px;
+	
+	padding-left:0px;
+}
+.manga_name{
+	background: #4D4D4D;
+	border: 3px solid #F58566;
+	position:relative;
+	
+	height:70px;
+	width:80%;
+	
+	padding:10px ;
+	margin:0 auto;
+	margin-top:auto;
+	border-radius:5px;	
+}
+.manga_about{
+	background: #4D4D4D;
+	border: 3px solid #F58566;
+	position:relative;
+	width:80%;
+	
+	padding:10px ;
+	border-radius:5px;	
+	margin:0 auto;
+	margin-top:25px;
+	margin-bottom:75px;	
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.index_images{
+	/*display: -webkit-flex; 
+	-webkit-flex-direction: column;
+	-webkit-flex-wrap: wrap;*/
+	/*display: flex;
+	flex-direction: raw;*/
+	/*flex-wrap:wrap;*/
+	/*z-index:1;
+	width:8%;
+	margin-top:50%;*/
+	position:absolute;
+	z-index:-2;
+	width:90%;
+	height:100%;
+}
+.image0{
+	float: left;
+	display: block;	
+	margin-top:5%;
+	margin-left:-1%;
+}
+.image1{
+	float: right;
+	display: block;	
+	margin-top:25%;
+	margin-right:-10%;	
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main_page_picture img{
+	background-size:contain;
+	width:500px;
+	height:300px;
+	margin:0 auto;
+	margin-left:5%;
+}
+footer{
+	background: #76BCBC;
+	/*border-top:3px solid #F58566;*/
+	font-size:12pt;
+	text-align: left;
+	opacity: .7;
+	
+	width:100%;
+	height:40px;
+		
+	padding:10px 0px;	
+	margin-top:25px;
+		
+	z-index:9999;
+	position: fixed;
+	bottom:0%;
+}
+/*--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 300px) and (max-width: 900px){
+	body{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 10pt;
+	background-color: #C6A4C7;
+	background-image: url(../Pictures/Background1.jpg);
+	background-repeat: repeat;
+	background-position: top center;
+	
+	color: #F5F5F5;
+	
+	width:100%;
+	height:100%;
+	/*display: flex;
+	flex-direction: column;
+	min-height: 100%;*/
+	}
+	a{
+		text-decoration:none;
+		color: #F5F5F5;
+	}
+	header{
+		background: #76BCBC;
+		font-size:14pt;
+		color: #F58566;	
+		text-align:justify;
+
+		width:100%;
+		height:25px;
+		
+		position:relative;
+		top:0%;
+		border-bottom: 2px solid #F58566;
+		padding:5px 0px;
+		padding-top:10px;
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.menu1{
+		position:absolute;
+		left:30px;
+	}
+	.menu1:before{
+		color:#F5F5F5;
+		content:"\2615";
+	}
+	.menu2{
+		position:absolute;
+		left:140px;
+	}
+	.menu2:before{
+		color:#F5F5F5;
+		content:"\2263";
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	article{	
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		
+		position:relative;
+		
+		height:90%;
+		width:85%;
+		
+		padding:10px ;
+		margin:0 auto;
+		margin-top:2.5%;
+		margin-bottom:25px;	
+	}
+	h1{
+		font-size:12pt;
+	}
+	p{
+		font-size:11pt;
+	}
+	li{
+		list-style-type:"\25C9";
+		list-style-position:inside;
+		margin-bottom:15px;
+		padding-left:0px;
+		padding-right:10px
+	}
+	li span {
+	  position: relative;
+	  left: 3px;
+	}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.card{
+		transition:0.3s;
+		border-radius:5px;
+		
+		width:125px;
+		height:168px;
+		
+		position:relative;
+		display:inline-block;
+		margin:15px;
+	}
+	.descr{
+		display:none;
+		font-size: 12pt;
+		border: 3px solid #F58566;
+		margin-left:380px;
+		padding:10px;
+		margin-top:0px;
+		opacity: .95;
+		background:#111111;
+		border-radius:5px;
+		height:70%;
+		-moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+		-webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+		box-shadow:0 5px 5px rgba(0,0,0,0.3);
+	}
+	.card:hover .descr{
+		display:block;
+		position:absolute;
+		top:0px;
+		z-index:9998;
+		width:80%;
+		
+	}
+	.card img{
+		width:100%;
+		height:100%;
+	}
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);/*тень при наведении*/
+	}
+	.container{
+		position: absolute;
+		bottom:0px;
+		left:0;
+		
+		width:97%;
+		padding-bottom:2px;
+		padding-left:5px;
+		padding-top:100px;
+		
+		background-image: linear-gradient(/*градиент фона затемнения*/
+		180deg,
+		hsla(0, 0%, 35.29%, 0) 0%,
+		hsla(0, 0%, 34.53%, 0.034375) 16.36%,
+		hsla(0, 0%, 32.42%, 0.125) 33.34%,
+		hsla(0, 0%, 29.18%, 0.253125) 50.1%,
+		hsla(0, 0%, 24.96%, 0.4) 65.75%,
+		hsla(0, 0%, 19.85%, 0.546875) 79.43%,
+		hsla(0, 0%, 13.95%, 0.675) 90.28%,
+		hsla(0, 0%, 7.32%, 0.765625) 97.43%,
+		hsla(0, 0%, 0%, 0.8) 100%
+		);
+		border-radius:5px;
+	}
+	.conteiner.p{
+		font-size:18pt;
+	}
+	img{
+		border-radius:5px 5px 5px 5px;/*скругление углов*/
+		width:375px;
+		height:506px;
+	}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.manga_article1{
+		position:static;
+
+		height:90%;
+		width:85%;
+		
+		padding:10px;
+		padding-top:0px;
+		padding-bottom:0px;
+		margin:0 auto;	
+		margin-top:10px;	
+	}
+	.manga_image{
+		background: none;
+		/*border: 3px solid #F58566;*/
+		position:relative;
+		border-radius:5px;
+		height:81%;
+		width:60%;
+		
+		margin:0 auto;
+	}
+	.manga_image img{
+		width:100%;
+		height:100%;
+		border-radius:15px;
+	}
+	.manga_read_button{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		border-radius:5px;
+		
+		padding:5px;
+		width:90%;
+		margin:0 auto;	
+		margin-top:5px;
+		
+		
+	}
+	.manga_info{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		border-radius:5px;
+		padding:5px; 
+		
+		width:90%;
+		margin:0 auto;
+		margin-top:5px;
+		margin-bottom:15px;
+		
+		
+	}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.manga_article2{
+		position:static;
+		
+		height:90%;
+		width:85%;
+		
+		padding:10px;
+		padding-top:0px;
+		margin:0 auto;
+	}
+	.manga_name{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		height:25px;
+		width:90%;
+		
+		padding:10px;
+		padding-top:5px;
+		padding-left:15px;
+		margin:0 auto;
+		border-radius:5px;	
+	}
+	.manga_about{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		width:90%;
+		
+		padding:10px ;
+		padding-top:5px;
+		border-radius:5px;	
+		margin:0 auto;
+		margin-top:5px;
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.index_images{
+		/*display: -webkit-flex; 
+		-webkit-flex-direction: column;
+		-webkit-flex-wrap: wrap;*/
+		/*display: flex;
+		flex-direction: raw;*/
+		/*flex-wrap:wrap;*/
+		/*z-index:1;
+		width:8%;
+		margin-top:50%;*/
+		position:absolute;
+		z-index:1;
+		width:100%;
+		height:70%;
+		display: none;
+	}
+	.image0{
+		float: left;
+		display: block;	
+		margin-top:5%;
+		height:10%;
+		
+		
+	}
+	.image1{
+		float: right;
+		display: block;	
+		margin-top:5%;
+		height:10%;
+		
+		
+	}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.main_page_picture img{
+		background-size:contain;
+		width:250px;
+		height:150px;
+		margin:0 auto;
+		margin-left:5%;
+	}
+	footer{
+		background: #76BCBC;
+		/*border-top:3px solid #F58566;*/
+		font-size:10pt;
+		text-align: left;
+		opacity: .7;
+		
+		width:100%;
+		height:20px;
+			
+		padding:6px 0px;	
+		margin-top:10px;
+			
+		z-index:9999;
+		position: fixed;
+		bottom:0%;
+	}
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media print{
+	tytle{display:none;}
+	body{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 10pt;
+	background-color: #C6A4C7;
+	background-image: url(../Pictures/Background1.jpg);
+	background-repeat: repeat;
+	background-position: top center;
+	
+	color: #F5F5F5;
+	
+	width:100%;
+	height:100%;
+	/*display: flex;
+	flex-direction: column;
+	min-height: 100%;*/
+	}
+	a{
+		text-decoration:none;
+		color: #F5F5F5;
+	}
+	header{
+		background: #76BCBC;
+		font-size:14pt;
+		color: #F58566;	
+		text-align:justify;
+
+		width:100%;
+		height:25px;
+		
+		position:relative;
+		top:0%;
+		border-bottom: 2px solid #F58566;
+		padding:5px 0px;
+		padding-top:10px;
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.menu1{
+		position:absolute;
+		left:30px;
+	}
+	.menu1:before{
+		color:#F5F5F5;
+		content:"\2615";
+	}
+	.menu2{
+		position:absolute;
+		left:140px;
+	}
+	.menu2:before{
+		color:#F5F5F5;
+		content:"\2263";
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	article{	
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		
+		position:relative;
+		
+		height:90%;
+		width:85%;
+		
+		padding:10px ;
+		margin:0 auto;
+		margin-top:2.5%;
+		margin-bottom:25px;	
+	}
+	h1{
+		font-size:12pt;
+	}
+	p{
+		font-size:11pt;
+	}
+	li{
+		list-style-type:"\25C9";
+		list-style-position:inside;
+		margin-bottom:15px;
+		padding-left:0px;
+		padding-right:10px
+	}
+	li span {
+	  position: relative;
+	  left: 3px;
+	}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.card{
+		transition:0.3s;
+		border-radius:5px;
+		
+		width:125px;
+		height:168px;
+		
+		position:relative;
+		display:inline-block;
+		margin:15px;
+	}
+	.descr{
+		display:none;
+		font-size: 12pt;
+		border: 3px solid #F58566;
+		margin-left:380px;
+		padding:10px;
+		margin-top:0px;
+		opacity: .95;
+		background:#111111;
+		border-radius:5px;
+		height:70%;
+		-moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+		-webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+		box-shadow:0 5px 5px rgba(0,0,0,0.3);
+	}
+	.card:hover .descr{
+		display:block;
+		position:absolute;
+		top:0px;
+		z-index:9998;
+		width:80%;
+		
+	}
+	.card img{
+		width:100%;
+		height:100%;
+	}
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);/*тень при наведении*/
+	}
+	.container{
+		position: absolute;
+		bottom:0px;
+		left:0;
+		
+		width:97%;
+		padding-bottom:2px;
+		padding-left:5px;
+		padding-top:0px;
+		
+		/*background-image: linear-gradient(
+		180deg,
+		hsla(0, 0%, 35.29%, 0) 0%,
+		hsla(0, 0%, 34.53%, 0.034375) 16.36%,
+		hsla(0, 0%, 32.42%, 0.125) 33.34%,
+		hsla(0, 0%, 29.18%, 0.253125) 50.1%,
+		hsla(0, 0%, 24.96%, 0.4) 65.75%,
+		hsla(0, 0%, 19.85%, 0.546875) 79.43%,
+		hsla(0, 0%, 13.95%, 0.675) 90.28%,
+		hsla(0, 0%, 7.32%, 0.765625) 97.43%,
+		hsla(0, 0%, 0%, 0.8) 100%
+		);*/
+		border-radius:5px;
+	}
+	.conteiner.p{
+		font-size:18pt;
+	}
+	img{
+		border-radius:5px 5px 5px 5px;/*скругление углов*/
+		width:375px;
+		height:506px;
+	}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.manga_article1{
+		position:static;
+
+		height:90%;
+		width:85%;
+		
+		padding:10px;
+		padding-top:0px;
+		padding-bottom:0px;
+		margin:0 auto;	
+		margin-top:10px;	
+	}
+	.manga_image{
+		background: none;
+		/*border: 3px solid #F58566;*/
+		position:relative;
+		border-radius:5px;
+		height:40%;
+		width:20%;
+		
+		margin:0 auto;
+	}
+	.manga_image img{
+		width:100%;
+		height:100%;
+		border-radius:15px;
+	}
+	.manga_read_button{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		border-radius:5px;
+		
+		padding:5px;
+		width:90%;
+		margin:0 auto;	
+		margin-top:5px;
+		
+		
+	}
+	.manga_info{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		border-radius:5px;
+		padding:5px; 
+		
+		width:90%;
+		margin:0 auto;
+		margin-top:5px;
+		margin-bottom:15px;
+		
+		
+	}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.manga_article2{
+		position:static;
+		
+		height:90%;
+		width:85%;
+		
+		padding:10px;
+		padding-top:0px;
+		margin:0 auto;
+	}
+	.manga_name{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		height:25px;
+		width:90%;
+		
+		padding:10px;
+		padding-top:5px;
+		padding-left:15px;
+		margin:0 auto;
+		border-radius:5px;	
+	}
+	.manga_about{
+		background: #4D4D4D;
+		border: 2px solid #F58566;
+		position:relative;
+		width:90%;
+		
+		padding:10px ;
+		padding-top:5px;
+		border-radius:5px;	
+		margin:0 auto;
+		margin-top:5px;
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.index_images{
+		/*display: -webkit-flex; 
+		-webkit-flex-direction: column;
+		-webkit-flex-wrap: wrap;*/
+		/*display: flex;
+		flex-direction: raw;*/
+		/*flex-wrap:wrap;*/
+		/*z-index:1;
+		width:8%;
+		margin-top:50%;*/
+		position:absolute;
+		z-index:1;
+		width:100%;
+		height:70%;
+		display: none;
+	}
+	.image0{
+		float: left;
+		display: block;	
+		margin-top:5%;
+		height:10%;
+		
+		
+	}
+	.image1{
+		float: right;
+		display: block;	
+		margin-top:5%;
+		height:10%;
+		
+		
+	}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	.main_page_picture img{
+		display:none;
+		background-size:contain;
+		width:250px;
+		height:150px;
+		margin:0 auto;
+		margin-left:5%;
+	}
+	footer{
+		background: #76BCBC;
+		/*border-top:3px solid #F58566;*/
+		font-size:10pt;
+		text-align: left;
+		opacity: .7;
+		
+		width:100%;
+		height:20px;
+			
+		padding:6px 0px;	
+		margin-top:10px;
+			
+		z-index:9999;
+		position: fixed;
+		bottom:0%;
+	}
+}
